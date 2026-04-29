@@ -18,7 +18,7 @@ export default function FormTripData({
               type="text"
               className="form-control"
               id="destination"
-              placeholder="Es: Roma, Parigi, New York..."
+              placeholder="Es: Roma, Parigi, Collegiove..."
               name="destination"
               value={newTrip.destination}
               onChange={handleChange}

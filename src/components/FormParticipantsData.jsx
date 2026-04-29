@@ -86,7 +86,7 @@ export default function FormParticipantsData({
       )}
       {saved && (
         <p className="text-success fw-bold">
-          ✅ Viaggio salvato con successo! Reinderizzamento...
+          <i className="bi bi-check-square-fill">Viaggio salvato con successo! Reinderizzamento...</i> 
         </p>
       )}
 

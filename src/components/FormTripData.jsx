@@ -7,6 +7,8 @@ export default function FormTripData({
     <>
       <h1 className="py-4 mt-4">Create a new trip</h1>
       <form onSubmit={handleNextStep}>
+        <div className="card p-4 mb-4 border-0 shadow-sm">
+
         <div className="row g-3">
           <div className="col-12">
             <label htmlFor="destination" className="form-label">
@@ -16,7 +18,7 @@ export default function FormTripData({
               type="text"
               className="form-control"
               id="destination"
-              placeholder="Frattamaggiore"
+              placeholder="Es: Roma, Parigi, New York..."
               name="destination"
               value={newTrip.destination}
               onChange={handleChange}
@@ -53,11 +55,13 @@ export default function FormTripData({
               required
             />
           </div>
-          <div className="col d-flex justify-content-end">
+          <div className="col d-flex justify-content-end ">
             <button type="submit" className="btn px-4 custom_button text-white">
               Avanti <i className="bi bi-arrow-right"></i> Aggiungi partecipanti
             </button>
           </div>
+        </div>
+
         </div>
       </form>
     </>

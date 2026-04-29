@@ -29,10 +29,7 @@ export default function SingleTrip() {
             <p className="text-secondary fw-medium">
               Ecco la lista dei partecipanti al viaggio
             </p>
-            <div className="d-flex justify-content-between mt-5 mb-4">
-              <button className="btn px-4 custom_button">
-                <i className="bi bi-plus-lg text-white"></i>
-              </button>
+            <div className="mt-5 mb-4 d-flex justify-content-end">
               <input
                 className="form-control"
                 type="search"

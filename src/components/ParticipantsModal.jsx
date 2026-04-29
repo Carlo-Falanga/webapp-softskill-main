@@ -34,7 +34,8 @@ export default function PartecipantsModal({ participant, onClose }) {
                             <div className="modal-footer">
                                 <button
                                     type="button"
-                                    className="btn btn-primary w-100"
+                                    className="
+                                     w-100"
                                     onClick={onClose}
                                 >
                                     Close

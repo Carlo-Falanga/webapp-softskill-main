@@ -10,6 +10,7 @@ export default function FormParticipantsData({
   isCompiled,
   handleForm,
   handleRemoveParticipant,
+  setStep,
 }) {
   return (
     <>
@@ -68,7 +69,7 @@ export default function FormParticipantsData({
             </div>
           </div>
           <button
-            className="btn btn-outline-primary mt-3"
+            className="btn px-4 text-white custom_button mt-4"
             type="submit"
             onClick={handleAddParticipant}
           >
@@ -95,15 +96,18 @@ export default function FormParticipantsData({
         </p>
       )}
 
-      <div className="d-flex gap-2">
-        <button className="btn btn-outline-primary" onClick={() => setStep(1)}>
-          Indietro
+      <div className="d-flex justify-content-between gap-2">
+        <button
+          className="btn px-4 text-white custom_button"
+          onClick={() => setStep(1)}
+        >
+          <i className="bi bi-arrow-left"> Indietro</i>
         </button>
         <button
-          className={`btn btn-outline-success ${participants.length === 0 ? "disabled" : ""}`}
+          className={`btn btn-success px-4 text-white custom_save_button  ${participants.length === 0 ? "disabled" : ""}`}
           onClick={handleForm}
         >
-          💾 Salva viaggio
+          <i className="bi bi-floppy2"></i> Salva viaggio
         </button>
       </div>
     </>

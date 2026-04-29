@@ -1,4 +1,8 @@
-export default function FormTripData({handleNextStep, newTrip, handleChange}) {
+export default function FormTripData({
+  handleNextStep,
+  newTrip,
+  handleChange,
+}) {
   return (
     <>
       <h1 className="py-4 mt-4">Create a new trip</h1>
@@ -49,9 +53,9 @@ export default function FormTripData({handleNextStep, newTrip, handleChange}) {
               required
             />
           </div>
-          <div className="col-12">
-            <button type="submit" className="btn btn-primary">
-              Avanti
+          <div className="col d-flex justify-content-end">
+            <button type="submit" className="btn px-4 custom_button text-white">
+              Avanti <i className="bi bi-arrow-right"></i> Aggiungi partecipanti
             </button>
           </div>
         </div>

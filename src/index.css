@@ -1,57 +1,73 @@
 @import "bootstrap";
-
+@import "bootstrap-icons";
 
 body {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .custom_pill {
-    width: 150px;
+  width: 150px;
 }
 
 .custom-card {
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    background: #ffffff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background: #ffffff;
 }
 
 .custom-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .custom_pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .search-input {
-    width: 250px;
+  width: 250px;
 }
 
 /* navbar styles */
 .navbar {
-    background-color: #0a0f1e;
+  background-color: #0a0f1e;
 }
 
-.custom_nav_button {
-    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-    color: #fff;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 0.82rem;
+/* custom buttons */
+.custom_button {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.custom_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(13, 110, 253, 0.25);
+  filter: brightness(1.03);
+  color: #fff;
+}
+.custom_save_button {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.82rem;
 }

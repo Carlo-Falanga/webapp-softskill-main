@@ -13,9 +13,6 @@ export default function SingleTrip() {
 
   const trip = trips.find((trip) => trip.id === Number(id));
 
-  if(!trip) {
-    return <p>Viaggio non trovato</p>
-  }
   const filteredParticipants = trip.participants.filter((participant) => {
     const fullName =
       `${participant.firstName} ${participant.lastName}`.toLowerCase();
@@ -32,16 +29,19 @@ export default function SingleTrip() {
             <p className="text-secondary fw-medium">
               Ecco la lista dei partecipanti al viaggio
             </p>
-            <form className="d-flex justify-content-end ms-auto w-auto mt-5">
+            <div className="d-flex justify-content-between mt-5 mb-4">
+              <button className="btn px-4 custom_button">
+                <i className="bi bi-plus-lg text-white"></i>
+              </button>
               <input
-                className="form-control mb-4"
+                className="form-control"
                 type="search"
                 placeholder="Search"
                 style={{ width: "250px" }}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-            </form>
+            </div>
             <div className="row">
               {filteredParticipants.map((participant) => (
                 <TripPartecipants

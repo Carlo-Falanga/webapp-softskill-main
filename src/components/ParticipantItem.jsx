@@ -14,7 +14,7 @@ export default function ParticipantItem({
         className="btn btn-sm btn-outline-danger"
         onClick={() => handleRemoveParticipant(participant.id)}
       >
-        Rimuovi
+        <i className="bi bi-trash-fill"></i>
       </button>
     </li>
   );

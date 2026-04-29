@@ -106,7 +106,7 @@ export default function CreateTrip() {
             )}
 
             {step === 2 && (
-              <FormParticipantsData handleAddParticipant={handleAddParticipant} newParticipant={newParticipant} handleParticipantChange={handleParticipantChange} newTrip={newTrip} participants={participants} saved={saved} isCompiled={isCompiled} handleForm={handleForm} handleRemoveParticipant={handleRemoveParticipant} />
+              <FormParticipantsData handleAddParticipant={handleAddParticipant} newParticipant={newParticipant} handleParticipantChange={handleParticipantChange} newTrip={newTrip} participants={participants} saved={saved} isCompiled={isCompiled} handleForm={handleForm} handleRemoveParticipant={handleRemoveParticipant} setStep={setStep} />
             )}
           </div>
         </div>

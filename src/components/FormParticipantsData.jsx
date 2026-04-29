@@ -1,4 +1,16 @@
-export default function FormParticipantsData({handleAddParticipant, newParticipant, handleParticipantChange, newTrip, participants, saved, isCompiled, handleForm, handleRemoveParticipant}) {
+import ParticipantsList from "./ParticipantsList";
+
+export default function FormParticipantsData({
+  handleAddParticipant,
+  newParticipant,
+  handleParticipantChange,
+  newTrip,
+  participants,
+  saved,
+  isCompiled,
+  handleForm,
+  handleRemoveParticipant,
+}) {
   return (
     <>
       <h1 className="py-4 mt-4">Aggiungi partecipanti</h1>
@@ -66,27 +78,10 @@ export default function FormParticipantsData({handleAddParticipant, newParticipa
       </form>
 
       {participants.length > 0 && (
-        <div className="card p-4 mb-4 border-0 shadow-sm">
-          <h5 className="fw-bold mb-3">Partecipanti ({participants.length})</h5>
-          <ul className="list-group list-group-flush">
-            {participants.map((participant) => (
-              <li
-                key={participant.id}
-                className="list-group-item d-flex justify-content-between align-items-center"
-              >
-                <span>
-                  {participant.firstName} {participant.lastName}
-                </span>
-                <button
-                  className="btn btn-sm btn-outline-danger"
-                  onClick={() => handleRemoveParticipant(participant.id)}
-                >
-                  Rimuovi
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ParticipantsList
+          participants={participants}
+          handleRemoveParticipant={handleRemoveParticipant}
+        />
       )}
       {saved && (
         <p className="text-success fw-bold">

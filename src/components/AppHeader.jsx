@@ -10,7 +10,7 @@ export default function AppHeader() {
           </Link>
           <ul className="nav justify-content-end">
             <Link to="/createtrip" className="nav-link text-white">
-              <button className="btn custom_button">Add Trip</button>
+              <button className="btn custom_button">Crea Viaggio</button>
             </Link>
           </ul>
         </div>

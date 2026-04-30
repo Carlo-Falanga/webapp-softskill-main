@@ -5,14 +5,14 @@ export default function FormTripData({
 }) {
   return (
     <>
-      <h1 className="py-4 mt-4">Create a new trip</h1>
+      <h1 className="py-4 mt-4">Crea un nuovo viaggio</h1>
       <form onSubmit={handleNextStep}>
         <div className="card p-4 mb-4 border-0 shadow-sm">
 
         <div className="row g-3">
           <div className="col-12">
             <label htmlFor="destination" className="form-label">
-              Destination
+              Destinazione
             </label>
             <input
               type="text"
@@ -28,7 +28,7 @@ export default function FormTripData({
 
           <div className="col-12 col-md-6">
             <label htmlFor="startDate" className="form-label">
-              Start Date
+              Data di inizio
             </label>
             <input
               type="date"
@@ -43,7 +43,7 @@ export default function FormTripData({
 
           <div className="col-12 col-md-6">
             <label htmlFor="endDate" className="form-label">
-              End Date
+              Data di fine
             </label>
             <input
               type="date"

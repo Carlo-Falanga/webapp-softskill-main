@@ -22,10 +22,10 @@ export default function PartecipantsModal({ participant, onClose }) {
               </div>
               <div className="modal-body">
                 <p>
-                  <strong>Phone:</strong> {participant.phone}
+                  <strong>Telefono:</strong> {participant.phone}
                 </p>
                 <p>
-                  <strong>Fiscal Code:</strong> {participant.fiscalCode}
+                  <strong>Codice Fiscale:</strong> {participant.fiscalCode}
                 </p>
 
                 <p>
